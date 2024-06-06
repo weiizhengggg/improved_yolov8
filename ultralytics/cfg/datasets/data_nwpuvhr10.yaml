@@ -2,5 +2,16 @@ train: /kaggle/input/nwpuvhr10-yolov8/NWPUVHR10_YOLOv8/train/images
 val: /kaggle/input/nwpuvhr10-yolov8/NWPUVHR10_YOLOv8/valid/images
 test: /kaggle/input/nwpuvhr10-yolov8/NWPUVHR10_YOLOv8/test/images
 
-nc: 10
-names: ['airplane', 'baseball diamond', 'basketball court', 'bridge', 'ground track field', 'harbor', 'ship', 'storage tank', 'tennis court', 'vehicle']
+names: 
+  0: airplane
+  1: baseball diamond
+  2: basketball court
+  3: bridge
+  4: ground track field
+  5: harbor
+  6: ship
+  7: storage tank
+  8: tennis court
+  9: vehicle
+
+cache_dir: /kaggle/working/cache
