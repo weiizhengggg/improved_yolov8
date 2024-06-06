@@ -1,0 +1,9 @@
+train: /kaggle/input/dior-yolov8/DIOR_YOLOv8/train/images
+val: /kaggle/input/dior-yolov8/DIOR_YOLOv8/valid/images
+test: /kaggle/input/dior-yolov8/DIOR_YOLOv8/test/images
+
+nc: 20
+names: ['airplane', 'airport', 'baseballfield', 'basketballcourt', 'bridge', 'chimney', 'dam',
+        'Expressway-Service-area', 'Expressway-toll-station', 'golffield', 'groundtrackfield', 'harbor', 
+        'overpass', 'ship', 'stadium', 'storagetank', 'tenniscourt', 'trainstation', 'vehicle', 'windmill']
+

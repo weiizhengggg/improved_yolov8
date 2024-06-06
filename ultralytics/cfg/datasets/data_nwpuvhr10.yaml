@@ -1,0 +1,6 @@
+train: /kaggle/input/nwpuvhr10-yolov8/NWPUVHR10_YOLOv8/train/images
+val: /kaggle/input/nwpuvhr10-yolov8/NWPUVHR10_YOLOv8/valid/images
+test: /kaggle/input/nwpuvhr10-yolov8/NWPUVHR10_YOLOv8/test/images
+
+nc: 10
+names: ['airplane', 'baseball diamond', 'basketball court', 'bridge', 'ground track field', 'harbor', 'ship', 'storage tank', 'tennis court', 'vehicle']
