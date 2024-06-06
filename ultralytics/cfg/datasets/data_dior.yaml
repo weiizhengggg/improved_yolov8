@@ -23,5 +23,3 @@ names:
   17: trainstation
   18: vehicle
   19: windmill
-
-cache_dir: /kaggle/working/cache
