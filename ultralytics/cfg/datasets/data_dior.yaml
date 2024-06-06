@@ -1,6 +1,6 @@
-train: /kaggle/input/dior-yolov8/DIOR_YOLOv8/train/images
-val: /kaggle/input/dior-yolov8/DIOR_YOLOv8/valid/images
-test: /kaggle/input/dior-yolov8/DIOR_YOLOv8/test/images
+train: /kaggle/input/dior-yolo/DIOR_YOLO/images/train
+val: /kaggle/input/dior-yolo/DIOR_YOLO/images/valid
+test: /kaggle/input/dior-yolo/DIOR_YOLO/images/test
 
 names: 
   0: airplane

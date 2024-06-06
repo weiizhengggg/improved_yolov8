@@ -1,6 +1,6 @@
-train: /kaggle/input/nwpuvhr10-yolov8/NWPUVHR10_YOLOv8/train/images
-val: /kaggle/input/nwpuvhr10-yolov8/NWPUVHR10_YOLOv8/valid/images
-test: /kaggle/input/nwpuvhr10-yolov8/NWPUVHR10_YOLOv8/test/images
+train: /kaggle/input/nwpu-vhr-10-yolo/NWPU_VHR-10_YOLO/images/train
+val: /kaggle/input/nwpu-vhr-10-yolo/NWPU_VHR-10_YOLO/images/valid
+test: /kaggle/input/nwpu-vhr-10-yolo/NWPU_VHR-10_YOLO/images/test
 
 names: 
   0: airplane

@@ -133,7 +133,11 @@ class YOLODataset(BaseDataset):
     def get_labels(self):
         """Returns dictionary of labels for YOLO training."""
         self.label_files = img2label_paths(self.im_files)
-        cache_path = Path(self.label_files[0]).parent.with_suffix(".cache")
+        # cache_path = Path(self.label_files[0]).parent.with_suffix(".cache")
+        custom_cache_dir = Path('./ultralytics/cache')
+        custom_cache_dir.mkdir(parents=True, exist_ok=True)  # create custom cache directory
+        cache_path = custom_cache_dir / (Path(self.label_files[0]).parent.with_suffix(".cache").name)
+    
         try:
             cache, exists = load_dataset_cache_file(cache_path), True  # attempt to load a *.cache file
             assert cache["version"] == DATASET_CACHE_VERSION  # matches current version
