@@ -21,7 +21,7 @@ project: # (str, optional) project name
 name: # (str, optional) experiment name, results saved to 'project/name' directory
 exist_ok: False # (bool) whether to overwrite existing experiment
 pretrained: True # (bool | str) whether to use a pretrained model (bool) or a model to load weights from (str)
-optimizer: SGD # (str) optimizer to use, choices=[SGD, Adam, Adamax, AdamW, NAdam, RAdam, RMSProp, auto]
+optimizer: Adam # (str) optimizer to use, choices=[SGD, Adam, Adamax, AdamW, NAdam, RAdam, RMSProp, auto]
 verbose: True # (bool) whether to print verbose output
 seed: 0 # (int) random seed for reproducibility
 deterministic: True # (bool) whether to enable deterministic mode
@@ -46,7 +46,7 @@ val: True # (bool) validate/test during training
 split: val # (str) dataset split to use for validation, i.e. 'val', 'test' or 'train'
 save_json: False # (bool) save results to JSON file
 save_hybrid: False # (bool) save hybrid version of labels (labels + additional predictions)
-conf: # (float, optional) object confidence threshold for detection (default 0.25 predict, 0.001 val)
+conf: 0.4 # (float, optional) object confidence threshold for detection (default 0.25 predict, 0.001 val)
 iou: 0.5 # (float) intersection over union (IoU) threshold for NMS
 max_det: 300 # (int) maximum number of detections per image
 half: False # (bool) use half precision (FP16)
@@ -105,7 +105,7 @@ hsv_h: 0.015 # (float) image HSV-Hue augmentation (fraction)
 hsv_s: 0.7 # (float) image HSV-Saturation augmentation (fraction)
 hsv_v: 0.4 # (float) image HSV-Value augmentation (fraction)
 degrees: 0.0 # (float) image rotation (+/- deg)
-translate: 0.1 # (float) image translation (+/- fraction)
+translate: 0.2 # (float) image translation (+/- fraction)
 scale: 0.0 # (float) image scale (+/- gain)
 shear: 0.0 # (float) image shear (+/- deg)
 perspective: 0.0 # (float) image perspective (+/- fraction), range 0-0.001
