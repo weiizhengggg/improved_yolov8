@@ -1,0 +1,15 @@
+train: /kaggle/input/nwpu-vhr-10-aug/NWPU_VHR-10_aug/images/train
+val: /kaggle/input/nwpu-vhr-10-aug/NWPU_VHR-10_aug/images/valid
+test: /kaggle/input/nwpu-vhr-10-aug/NWPU_VHR-10_aug/images/test
+
+names: 
+  0: airplane
+  1: baseball diamond
+  2: basketball court
+  3: bridge
+  4: ground track field
+  5: harbor
+  6: ship
+  7: storage tank
+  8: tennis court
+  9: vehicle
